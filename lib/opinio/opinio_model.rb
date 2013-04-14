@@ -56,19 +56,7 @@ module Opinio
     module RepliesSupport
       def self.included(base)
         base.class_eval do
-          validate :cannot_be_comment_of_a_comments_comment
           opinio_subjectum :order => 'created_at ASC'
-        end
-      end
-
-      private
-
-      # Validates that you cannot comment on a comment's comment
-      def cannot_be_comment_of_a_comments_comment
-        if new_record? && self.commentable_type == Opinio.model_name
-          if commentable.commentable_type == Opinio.model_name
-            errors.add :base, I18n.t('opinio.messages.cannot_be_comment_of_comment')
-          end
         end
       end
 
