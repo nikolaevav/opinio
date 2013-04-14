@@ -1,0 +1,15 @@
+ru:
+  opinio:
+    actions:
+      delete: 'Удалить'
+      reply: 'Отметить'
+      add: 'Добавить'
+    messages:
+      no_comments_found: 'Комментарии не найдены'
+      must_be_logged_in_to_comment: 'Комментировать могут только авторизованные пользователи.'
+      add_comment: 'Добавить комментарий'
+      comments: 'Комментарии'
+      comment_sent: 'Комментарий добавлен.'
+      comment_sending_error: 'Ошибка при отправке комментария.'
+      comment_destroyed: 'Комментарий успешно удален.'
+      comment_interval: 'Вы должны подождать %{time} секунд чтобы снова комментировать.'
